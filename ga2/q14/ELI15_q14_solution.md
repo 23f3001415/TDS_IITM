@@ -75,4 +75,4 @@ curl -X POST "https://your-project-name.vercel.app/api" \
 CORS is enabled for POST from any origin in `api/index.py`.
 
 ## Final answer format to submit
-`https://<your-vercel-domain>/api`
+`https://q14-dun.vercel.app/api`
