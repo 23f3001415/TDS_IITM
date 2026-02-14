@@ -1,0 +1,36 @@
+{
+  "metadata": {
+    "email": "23f3001415@ds.study.iitm.ac.in",
+    "version": "bf25f036"
+  },
+  "products": [
+    {"id":"prod-bf25f036-001","name":"Standard Item 1","category":"home","price":255.83,"stock":109,"rating":1.7},
+    {"id":"prod-bf25f036-002","name":"Premium Item 2","category":"clothing","price":61.74,"stock":159,"rating":3.9},
+    {"id":"prod-bf25f036-003","name":"Basic Item 3","category":"electronics","price":162.84,"stock":79,"rating":1.2},
+    {"id":"prod-bf25f036-004","name":"Premium Item 4","category":"books","price":157.66,"stock":141,"rating":1.5},
+    {"id":"prod-bf25f036-005","name":"Standard Item 5","category":"sports","price":332.47,"stock":142,"rating":4.7},
+    {"id":"prod-bf25f036-006","name":"Elite Item 6","category":"electronics","price":377.97,"stock":185,"rating":2.4},
+    {"id":"prod-bf25f036-007","name":"Pro Item 7","category":"books","price":478.44,"stock":107,"rating":4.4},
+    {"id":"prod-bf25f036-008","name":"Elite Item 8","category":"books","price":225.18,"stock":133,"rating":3.5},
+    {"id":"prod-bf25f036-009","name":"Elite Item 9","category":"sports","price":89.25,"stock":39,"rating":1.3},
+    {"id":"prod-bf25f036-010","name":"Pro Item 10","category":"home","price":357.27,"stock":181,"rating":1.8},
+    {"id":"prod-bf25f036-011","name":"Premium Item 11","category":"electronics","price":16.5,"stock":166,"rating":1.2},
+    {"id":"prod-bf25f036-012","name":"Pro Item 12","category":"sports","price":130.4,"stock":199,"rating":3.5},
+    {"id":"prod-bf25f036-013","name":"Standard Item 13","category":"home","price":469.26,"stock":112,"rating":1.7},
+    {"id":"prod-bf25f036-014","name":"Basic Item 14","category":"sports","price":351.41,"stock":88,"rating":1.1},
+    {"id":"prod-bf25f036-015","name":"Elite Item 15","category":"home","price":295.29,"stock":177,"rating":2.3},
+    {"id":"prod-bf25f036-016","name":"Pro Item 16","category":"sports","price":436.35,"stock":93,"rating":4.6},
+    {"id":"prod-bf25f036-017","name":"Pro Item 17","category":"electronics","price":44.81,"stock":82,"rating":2.0},
+    {"id":"prod-bf25f036-018","name":"Pro Item 18","category":"electronics","price":416.01,"stock":61,"rating":3.3},
+    {"id":"prod-bf25f036-019","name":"Basic Item 19","category":"home","price":187.73,"stock":25,"rating":3.1},
+    {"id":"prod-bf25f036-020","name":"Standard Item 20","category":"clothing","price":465.31,"stock":17,"rating":1.4},
+    {"id":"prod-bf25f036-021","name":"Premium Item 21","category":"sports","price":382.91,"stock":190,"rating":4.6}
+  ],
+  "aggregations": {
+    "books": {"count": 3, "inventoryValue": 103372.08},
+    "clothing": {"count": 2, "inventoryValue": 17726.93},
+    "electronics": {"count": 5, "inventoryValue": 114578.84},
+    "home": {"count": 5, "inventoryValue": 202068.04},
+    "sports": {"count": 6, "inventoryValue": 220898.62}
+  }
+}
