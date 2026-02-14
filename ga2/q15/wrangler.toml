@@ -1,0 +1,4 @@
+name = "ga2-q15-23f3001415"
+main = "src/worker.js"
+compatibility_date = "2025-03-01"
+workers_dev = true
