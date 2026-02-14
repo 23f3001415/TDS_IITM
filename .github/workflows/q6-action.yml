@@ -1,0 +1,19 @@
+name: Q6 GitHub Action
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: 23f3001415@ds.study.iitm.ac.in
+        run: echo "Hello from Q6 workflow"
+
+      - name: Show time
+        run: date
