@@ -35,11 +35,12 @@ function reverseByType(type, value) {
   }
 
   if (type === "number") {
-    const sign = Number(value) < 0 ? -1 : 1;
-    const digits = String(Math.abs(Number(value)));
-    if (!/^\d+(\.\d+)?$/.test(digits)) {
-      throw new Error("value must be numeric for type=number");
+    const num = Number(value);
+    if (!Number.isFinite(num) || !Number.isInteger(num)) {
+      throw new Error("value must be an integer for type=number");
     }
+    const sign = num < 0 ? -1 : 1;
+    const digits = String(Math.abs(num));
     const reversed = digits.split("").reverse().join("");
     return sign * parseInt(reversed.replace(/^0+/, "") || "0", 10);
   }
