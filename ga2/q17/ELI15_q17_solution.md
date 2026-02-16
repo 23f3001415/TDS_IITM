@@ -32,7 +32,7 @@ your url is: https://random-name.loca.lt
 6. Submit that URL in the assignment.
 
 ## URL for this run
-`https://chatty-news-tie.loca.lt`
+`https://tds23f3001415q17a.loca.lt`
 
 ## Important gotcha
 This URL is temporary. If the terminal stops, the link stops and you need a new URL.
