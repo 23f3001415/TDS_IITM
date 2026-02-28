@@ -1,0 +1,650 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.350 --> 00:00:05.060
+Sometimes in our computing life, we actually
+make use of software without realizing that
+
+00:00:05.060 --> 00:00:11.170
+we're using a particular piece of software
+- And one very good example of this is FFMPEG!
+
+00:00:11.170 --> 00:00:17.630
+FFMPEG is actually a command line utility
+and its job is to do file format conversion.
+
+00:00:17.630 --> 00:00:21.690
+And, in that process, it can also do a number
+of cool things.
+
+00:00:21.690 --> 00:00:26.790
+Now, because of the license of FFMPEG, it
+is actually included in certain other pieces
+
+00:00:26.790 --> 00:00:31.940
+of software, you know, to do its job in the
+background and as a result you may or may
+
+00:00:31.940 --> 00:00:35.760
+not realize that it's actually there, but
+in fact it is!
+
+00:00:35.760 --> 00:00:40.329
+So what we're gonna do today is we're not
+only gonna give FFMPEG the recognition it
+
+00:00:40.329 --> 00:00:45.480
+deserves, we're gonna learn how to actually
+use it from the command line, that is the
+
+00:00:45.480 --> 00:00:50.089
+plain, vanilla FFMPEG running on your computer
+from scratch!
+
+00:00:50.089 --> 00:00:52.569
+So yeah, I hope this interests you!
+
+00:00:52.569 --> 00:00:57.559
+After learning how to use FFMPEG I've actually
+found it quite useful and indispensable in
+
+00:00:57.559 --> 00:01:00.769
+many situations, so yeah, I hope you think
+the same!
+
+00:01:00.769 --> 00:01:14.670
+You're watching another random Wednesday episode
+on 0612 TV!
+
+00:01:14.670 --> 00:01:17.780
+Hello and welcome back to another random Wednesday
+episode!
+
+00:01:17.780 --> 00:01:19.159
+So, FFMPEG!
+
+00:01:19.159 --> 00:01:25.020
+A very interesting tool - Let's begin by learning
+how to install it, we'll then move on to the
+
+00:01:25.020 --> 00:01:31.200
+basics, and then to some more interesting
+things you can do with this piece of software.
+
+00:01:31.200 --> 00:01:36.100
+Of course, as it turns out, it is much more
+than a file format converter, but yeah, like
+
+00:01:36.100 --> 00:01:39.390
+I said, we'll see it when the time comes.
+
+00:01:39.390 --> 00:01:42.770
+First of course is how do we install this
+program?
+
+00:01:42.770 --> 00:01:46.700
+Well, you can find a download link in the
+video description, it will send you to the
+
+00:01:46.700 --> 00:01:49.640
+download page on the official FFMPEG site.
+
+00:01:49.640 --> 00:01:54.659
+You'll realize right off the bat that things
+are a little bit complicated because there
+
+00:01:54.659 --> 00:01:57.679
+are three different versions of FFMPEG you
+can choose from.
+
+00:01:57.679 --> 00:02:02.020
+But, they do tell you that if you've no idea
+what you're supposed to do here just pick
+
+00:02:02.020 --> 00:02:05.689
+the static version, so that's what we're gonna
+do!
+
+00:02:05.689 --> 00:02:12.820
+Basically the idea is the static version contains
+all of FFMPEG in one .exe file, which, for
+
+00:02:12.820 --> 00:02:15.520
+our purposes is the most convenient!
+
+00:02:15.520 --> 00:02:17.970
+So I would recommend that as well.
+
+00:02:17.970 --> 00:02:23.350
+Go ahead and download the latest version for
+whatever bitness your computer is, and you'll
+
+00:02:23.350 --> 00:02:27.020
+realize that what you end up with is an archive.
+
+00:02:27.020 --> 00:02:30.270
+Open the archive in an archive manager of
+some sort.
+
+00:02:30.270 --> 00:02:35.680
+If you don't have one you can check out PeaZip,
+which I will also link to in the video description.
+
+00:02:35.680 --> 00:02:40.520
+Within the archive, enter the "bin" folder,
+and look for FFMPEG.
+
+00:02:40.520 --> 00:02:46.650
+That's really the only file you need, so extract
+that to some location that you can remember,
+
+00:02:46.650 --> 00:02:48.470
+and we can begin converting!
+
+00:02:48.470 --> 00:02:55.000
+Now, if you intend to use FFMPEG from anywhere
+on your computer, you might want to, you know,
+
+00:02:55.000 --> 00:03:01.090
+save it somewhere important, like in a Program
+Files folder, and then link to it using the
+
+00:03:01.090 --> 00:03:02.650
+PATH variable.
+
+00:03:02.650 --> 00:03:06.160
+So what you're seeing onscreen right now are
+the steps I've used to do that.
+
+00:03:06.160 --> 00:03:12.010
+I do actually have things set up this way
+because well, it's just easier for me.
+
+00:03:12.010 --> 00:03:16.930
+Of course, this step is optional so if you
+don't want to do that, then make sure FFMPEG
+
+00:03:16.930 --> 00:03:22.340
+is in the same folder as the video files you
+want to work with.
+
+00:03:22.340 --> 00:03:27.240
+With that out of the way, let's move on to
+the fun part, and that is to actually convert
+
+00:03:27.240 --> 00:03:29.040
+files with FFMPEG!
+
+00:03:29.040 --> 00:03:35.540
+Now, previously to this I know I mentioned
+videos repeatedly, but as it turns out FFMPEG
+
+00:03:35.540 --> 00:03:38.540
+can also work with images and audio!
+
+00:03:38.540 --> 00:03:43.820
+Basically, well, it's a command line utility
+you just tell it what file to process and
+
+00:03:43.820 --> 00:03:47.310
+what kind of output you want, and it just
+does it!
+
+00:03:47.310 --> 00:03:48.930
+That's how amazing it is!
+
+00:03:48.930 --> 00:03:55.040
+So, let's actually try a very simple example
+first of taking a video file and converting
+
+00:03:55.040 --> 00:03:56.590
+it from .avi to .mp4.
+
+00:03:56.590 --> 00:04:02.090
+Now, what you're seeing here is a folder in
+which I have staged the files I want to work
+
+00:04:02.090 --> 00:04:03.470
+with throughout this video.
+
+00:04:03.470 --> 00:04:08.160
+You can open a command line very quickly on
+a windows computer by first making sure no
+
+00:04:08.160 --> 00:04:14.240
+files are selected, then hold down shift,
+right click empty space, and then click on
+
+00:04:14.240 --> 00:04:17.130
+"Open Command Window Here".
+
+00:04:17.130 --> 00:04:21.799
+That's convenient because the command window
+opens in that particular folder, so you can
+
+00:04:21.799 --> 00:04:23.900
+get started right away.
+
+00:04:23.900 --> 00:04:31.310
+Here's what FFMPEG syntax looks like - You
+start off by saying FFMPEG, then you say -i,
+
+00:04:31.310 --> 00:04:36.760
+which means "I'm about to specify an input
+file", and then, you go ahead and specify
+
+00:04:36.760 --> 00:04:38.320
+the input file!
+
+00:04:38.320 --> 00:04:42.690
+So what we wanna do here is we wanna convert
+an AVI file to MP4.
+
+00:04:42.690 --> 00:04:47.080
+So simply all you have to do is to actually
+press space, and type out the new name of
+
+00:04:47.080 --> 00:04:49.920
+the file, making sure that the extension is
+MP4.
+
+00:04:49.920 --> 00:04:54.160
+Hit enter, and, well, off it goes!
+
+00:04:54.160 --> 00:05:00.790
+FFMPEG is now converting an AVI file to MP4,
+by just looking at the file extension of the
+
+00:05:00.790 --> 00:05:02.590
+filename you gave it.
+
+00:05:02.590 --> 00:05:07.410
+That is how simple FFMPEG actually is, and
+a lot of the time when we want to convert
+
+00:05:07.410 --> 00:05:11.660
+between different file formats, that's really
+all you need to do.
+
+00:05:11.660 --> 00:05:16.660
+But well, the time will come when you wanna
+do something more complex, and that is where
+
+00:05:16.660 --> 00:05:19.740
+the command switches start to come in.
+
+00:05:19.740 --> 00:05:24.100
+Probably the first thing that concerns you
+would be the quality of the file.
+
+00:05:24.100 --> 00:05:29.620
+You would probably want to be able to tweak
+up the quality and what I'm gonna show you
+
+00:05:29.620 --> 00:05:33.710
+here works for MP4 and AVI respectively.
+
+00:05:33.710 --> 00:05:35.220
+Let's start with AVI.
+
+00:05:35.220 --> 00:05:41.780
+Now, there is a factor in image compression
+called the quantizer that actually affects
+
+00:05:41.780 --> 00:05:47.850
+file quality, and it is linked to how it should
+choose a bitrate, when it comes to variable
+
+00:05:47.850 --> 00:05:52.550
+bitrate encoding, but we won't go into too
+much detail about that.
+
+00:05:52.550 --> 00:05:56.480
+Basically, all you need to know is that the
+quantizer is a number.
+
+00:05:56.480 --> 00:05:59.210
+The smaller the number, the higher the quality.
+
+00:05:59.210 --> 00:06:03.140
+Of course, the higher the quality, the higher
+the file size, so there's a trade-off you
+
+00:06:03.140 --> 00:06:04.580
+need to work with.
+
+00:06:04.580 --> 00:06:10.620
+To set the quantizer for an output AVI file,
+all you have to do is well, you call FFMPEG,
+
+00:06:10.620 --> 00:06:16.110
+you specify the input, and then you type -q,
+followed by a number.
+
+00:06:16.110 --> 00:06:19.610
+This number is of course the quality setting
+you want.
+
+00:06:19.610 --> 00:06:24.389
+Numbers between 20 and 30 is common, but if
+you want a very high quality video, you can
+
+00:06:24.389 --> 00:06:27.139
+go as low as a single digit.
+
+00:06:27.139 --> 00:06:31.389
+If you want it to be lower quality you can
+go as high as 50.
+
+00:06:31.389 --> 00:06:32.389
+Experiment!
+
+00:06:32.389 --> 00:06:36.470
+You'll be able to see the difference in the
+different settings you choose.
+
+00:06:36.470 --> 00:06:41.090
+Do note that this only works when you're writing
+a file with a .avi extension.
+
+00:06:41.090 --> 00:06:48.120
+If you're doing this for MP4 files, then you'll
+want to specify the -crf value instead!
+
+00:06:48.120 --> 00:06:53.190
+So instead of -q you'll need to type -crf,
+and then enter your number.
+
+00:06:53.190 --> 00:06:59.190
+I think this exists on a slightly different
+scale from the -q flag, so yeah, be careful
+
+00:06:59.190 --> 00:07:00.190
+of that.
+
+00:07:00.190 --> 00:07:02.730
+The values are not necessarily the same!
+
+00:07:02.730 --> 00:07:04.280
+Once again, experiment!
+
+00:07:04.280 --> 00:07:08.370
+You know, look at the file size, look at the
+quality and decide whether you want to bump
+
+00:07:08.370 --> 00:07:10.280
+it up or down.
+
+00:07:10.280 --> 00:07:16.220
+If you prefer finer control, you can also
+specify the exact bitrate of the output file.
+
+00:07:16.220 --> 00:07:21.360
+Now, bitrates work for both audio and video
+in a file, so you'll probably want to tell
+
+00:07:21.360 --> 00:07:24.150
+it whether you want to tell it whether you
+want this to work on the video channel, or
+
+00:07:24.150 --> 00:07:25.920
+the audio channel.
+
+00:07:25.920 --> 00:07:31.610
+And to specify this, you'll want to enter
+a colon, and then type v or a, depending on
+
+00:07:31.610 --> 00:07:33.270
+which stream you want to target.
+
+00:07:33.270 --> 00:07:35.550
+Then, give it a number.
+
+00:07:35.550 --> 00:07:41.310
+For example, if I want the video quality to
+be 1000k, which is actually quite low, well,
+
+00:07:41.310 --> 00:07:42.310
+you can do that.
+
+00:07:42.310 --> 00:07:48.880
+I can even specify both audio and video bitrates
+at the same time, and that will fix the two
+
+00:07:48.880 --> 00:07:51.610
+bitrates of the two different streams.
+
+00:07:51.610 --> 00:07:53.890
+This is of course only if you want finer control.
+
+00:07:53.890 --> 00:07:59.740
+So yeah, for the vast majority of use cases
+I'd say you know, what you've learnt so far
+
+00:07:59.740 --> 00:08:05.610
+covers your bases, but let's say we want to
+go a step further - Let's take a look at FFMPEG
+
+00:08:05.610 --> 00:08:07.350
+filters just for fun!
+
+00:08:07.350 --> 00:08:13.250
+Now, here's the deal - FFMPEG actually comes
+bundled with a whole bunch of different filters!
+
+00:08:13.250 --> 00:08:16.370
+And they all have various effects on the video
+itself.
+
+00:08:16.370 --> 00:08:20.650
+What I've done is, through the whole list
+of video and audio filters, I've picked a
+
+00:08:20.650 --> 00:08:23.330
+total of five to go through with you.
+
+00:08:23.330 --> 00:08:28.590
+Two of them are for audio, and the remaining
+three are for video, and these are the things
+
+00:08:28.590 --> 00:08:30.400
+you'd probably do the most often.
+
+00:08:30.400 --> 00:08:33.120
+So yeah, let's take it from the top.
+
+00:08:33.120 --> 00:08:36.719
+We're going slideshow mode again because we've
+overrun!
+
+00:08:36.719 --> 00:08:39.569
+Let's quickly jump through the five filters.
+
+00:08:39.569 --> 00:08:42.050
+First, let's tweak the volume.
+
+00:08:42.050 --> 00:08:46.480
+To do this, simply add the following flag
+to the FFMPEG call.
+
+00:08:46.480 --> 00:08:51.709
+The flag itself says we want to use a filter
+on the audio channel, and its parameter says
+
+00:08:51.709 --> 00:08:56.230
+that we want to call the volume filter, with
+a setting of two.
+
+00:08:56.230 --> 00:08:59.240
+The number we provide is actually a multiplier.
+
+00:08:59.240 --> 00:09:03.829
+So when we say volume=2, we are actually doubling
+the volume.
+
+00:09:03.829 --> 00:09:09.529
+You can of course use decimal volumes, including
+values smaller than 1 to reduce the volume.
+
+00:09:09.529 --> 00:09:12.500
+Next, channel remapping.
+
+00:09:12.500 --> 00:09:17.220
+Sometimes we accidentally record with a mono
+mic into a stereo track, causing the sound
+
+00:09:17.220 --> 00:09:19.699
+to only go to the left channel.
+
+00:09:19.699 --> 00:09:24.769
+We can easily fix this by mapping the audio
+from the left input channel to both the output
+
+00:09:24.769 --> 00:09:26.189
+channels.
+
+00:09:26.189 --> 00:09:28.009
+That's what this command call means!
+
+00:09:28.009 --> 00:09:31.420
+The left channel is 0 and the right channel
+is 1.
+
+00:09:31.420 --> 00:09:36.360
+So what we're doing here is mapping the input
+left channel to the output left channel, and
+
+00:09:36.360 --> 00:09:41.829
+then the input left channel to the output
+right channel, thus creating an audio track
+
+00:09:41.829 --> 00:09:44.879
+that has sound on both sides.
+
+00:09:44.879 --> 00:09:47.129
+Let's move on to the video filters.
+
+00:09:47.129 --> 00:09:48.910
+First, cropping.
+
+00:09:48.910 --> 00:09:51.209
+The syntax looks like this.
+
+00:09:51.209 --> 00:09:56.230
+Notice how we say -filter:v because we now
+want to target video.
+
+00:09:56.230 --> 00:10:00.079
+We then say crop, and specify up to four parameters.
+
+00:10:00.079 --> 00:10:05.470
+The first two are width and height, which
+specify the width and height of the output.
+
+00:10:05.470 --> 00:10:09.880
+The two remaining parameters are optional,
+and they specify the upper left corner of
+
+00:10:09.880 --> 00:10:11.259
+the cropping.
+
+00:10:11.259 --> 00:10:14.829
+If unspecified, the cropping is centered.
+
+00:10:14.829 --> 00:10:16.829
+You can use arithmetic for this as well.
+
+00:10:16.829 --> 00:10:21.769
+For example, this statement means that we
+want to crop the video to 2/3 of its original
+
+00:10:21.769 --> 00:10:22.850
+size.
+
+00:10:22.850 --> 00:10:30.450
+The variables in_w and in_h are available,
+referring to the input width and height respectively.
+
+00:10:30.450 --> 00:10:33.240
+Next, video scaling.
+
+00:10:33.240 --> 00:10:37.480
+This looks very similar to the first two parameters
+of the crop filter.
+
+00:10:37.480 --> 00:10:41.579
+Use w and h to set the width and height of
+the output.
+
+00:10:41.579 --> 00:10:44.809
+You can also arithmetic like with cropping.
+
+00:10:44.809 --> 00:10:49.850
+The variables in_w and in_h are also available
+here.
+
+00:10:49.850 --> 00:10:57.329
+In addition, if you'd like proportional scaling,
+you can specify -1 for one of the input parameters.
+
+00:10:57.329 --> 00:11:01.249
+Its value will be determined from the length
+you do provide.
+
+00:11:01.249 --> 00:11:04.019
+Finally, rotation.
+
+00:11:04.019 --> 00:11:07.639
+Simply say rotate= and specify your angle.
+
+00:11:07.639 --> 00:11:11.550
+Unfortunately your angle needs to be specified
+in radians.
+
+00:11:11.550 --> 00:11:15.610
+Luckily it's not that hard, since you can
+just multiply by the constant PI/180.
+
+00:11:15.610 --> 00:11:23.070
+So the following statement refers to a clockwise
+rotation of 45 degrees.
+
+00:11:23.070 --> 00:11:27.319
+The result of this operation looks something
+like this.
+
+00:11:27.319 --> 00:11:28.440
+And there you have it!
+
+00:11:28.440 --> 00:11:34.519
+We've actually gone through a pretty comprehensive
+beginners guide to installing and using FFMPEG.
+
+00:11:34.519 --> 00:11:40.839
+And we've even taken a look at some complex
+features, in the form of some filters, but
+
+00:11:40.839 --> 00:11:43.309
+I've barely scratched the surface!
+
+00:11:43.309 --> 00:11:48.339
+Like I said, FFMPEG has a whole host of filters
+and if you want to look at the full list,
+
+00:11:48.339 --> 00:11:52.639
+I will include the link in the video description
+so you can find out more.
+
+00:11:52.639 --> 00:11:57.259
+That's all there is for this particular episode,
+it does look like I've overrun a bit so sorry
+
+00:11:57.259 --> 00:12:01.480
+about that, but hopefully you've found this
+video insightful anyway!
+
+00:12:01.480 --> 00:12:46.449
+Thank you very much for watching, and until
+next time, you're watching 0612 TV with NERDfirst.net.
+

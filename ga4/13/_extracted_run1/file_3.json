@@ -1,0 +1,114 @@
+[
+  {
+    "id": "USR04404",
+    "profile": {
+      "name": "User13",
+      "contact": {
+        "email": "user13@example.com",
+        "phone": "555-8249"
+      }
+    },
+    "metrics": {
+      "score": 28,
+      "level": 3
+    }
+  },
+  {
+    "id": "USR07363",
+    "profile": {
+      "name": "User287",
+      "contact": {
+        "email": "user287@example.com",
+        "phone": "555-2964"
+      }
+    },
+    "metrics": {
+      "score": 77,
+      "level": 5
+    }
+  },
+  {
+    "id": "USR05925",
+    "profile": {
+      "name": "User887",
+      "contact": {
+        "email": "user887@example.com",
+        "phone": "555-1109"
+      }
+    },
+    "metrics": {
+      "score": 17,
+      "level": 10
+    }
+  },
+  {
+    "id": "USR01686",
+    "profile": {
+      "name": "User271",
+      "contact": {
+        "email": "user271@example.com",
+        "phone": "555-2810"
+      }
+    },
+    "metrics": {
+      "score": 94,
+      "level": 3
+    }
+  },
+  {
+    "id": "USR03678",
+    "profile": {
+      "name": "User471",
+      "contact": {
+        "email": "user471@example.com",
+        "phone": "555-4901"
+      }
+    },
+    "metrics": {
+      "score": 70,
+      "level": 6
+    }
+  },
+  {
+    "id": "USR09528",
+    "profile": {
+      "name": "User303",
+      "contact": {
+        "email": "user303@example.com",
+        "phone": "555-9503"
+      }
+    },
+    "metrics": {
+      "score": 66,
+      "level": 3
+    }
+  },
+  {
+    "id": "USR08385",
+    "profile": {
+      "name": "User642",
+      "contact": {
+        "email": "user642@example.com",
+        "phone": "555-3821"
+      }
+    },
+    "metrics": {
+      "score": 67,
+      "level": 4
+    }
+  },
+  {
+    "id": "USR05409",
+    "profile": {
+      "name": "User569",
+      "contact": {
+        "email": "user569@example.com",
+        "phone": "555-8077"
+      }
+    },
+    "metrics": {
+      "score": 6,
+      "level": 1
+    }
+  }
+]

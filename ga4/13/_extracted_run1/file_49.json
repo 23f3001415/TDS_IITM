@@ -1,0 +1,72 @@
+[
+  {
+    "id": "USR03107",
+    "profile": {
+      "name": "User631",
+      "contact": {
+        "email": "user631@example.com",
+        "phone": "555-5038"
+      }
+    },
+    "metrics": {
+      "score": 21,
+      "level": 6
+    }
+  },
+  {
+    "id": "USR00186",
+    "profile": {
+      "name": "User662",
+      "contact": {
+        "email": "user662@example.com",
+        "phone": "555-6608"
+      }
+    },
+    "metrics": {
+      "score": 97,
+      "level": 3
+    }
+  },
+  {
+    "id": "USR09701",
+    "profile": {
+      "name": "User94",
+      "contact": {
+        "email": "user94@example.com",
+        "phone": "555-5132"
+      }
+    },
+    "metrics": {
+      "score": 35,
+      "level": 9
+    }
+  },
+  {
+    "id": "USR08561",
+    "profile": {
+      "name": "User923",
+      "contact": {
+        "email": "user923@example.com",
+        "phone": "555-1277"
+      }
+    },
+    "metrics": {
+      "score": 53,
+      "level": 5
+    }
+  },
+  {
+    "id": "USR03400",
+    "profile": {
+      "name": "User211",
+      "contact": {
+        "email": "user211@example.com",
+        "phone": "555-0887"
+      }
+    },
+    "metrics": {
+      "score": 77,
+      "level": 5
+    }
+  }
+]
