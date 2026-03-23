@@ -1,0 +1,61 @@
+question,is_correct
+"The following was found online: ""the treaty of versailles was signed in nineteen nineteen ending the first world war"". Assess its accuracy.",1
+"Explain what a RESTful API is and its key constraints.",1
+"How does the attention mechanism help models handle long-range dependencies?",1
+"What does it mean for a function to be pure in functional programming?",1
+"What is the difference between a process and a thread?",1
+"Explain the concept of idempotency in HTTP methods.",1
+"How does a generative adversarial network work?",0
+"What is the difference between synchronous and asynchronous I/O?",1
+"The following was found online: ""the human genome contains approximately three billion base pairs of dna"". Assess its accuracy.",1
+"Based on the following fact — ""a hash function maps data of arbitrary size to a fixed size digest deterministically"" — what can be concluded?",1
+"What is the difference between eager and lazy evaluation?",1
+"What is the purpose of normalisation in relational databases?",1
+"How does the EM algorithm handle latent variables?",1
+"True or false: a decision tree partitions the feature space using axis aligned splits to minimise impurity.",1
+"How does transformer architecture differ from recurrent neural networks?",1
+"What does ACID stand for in database transactions?",1
+"Verify the following statement: isaac newton formulated the three laws of motion in his principia mathematica in sixteen eighty seven.",1
+"What is a sufficient statistic and why does it matter?",1
+"What is the difference between a type I error and a type II error?",1
+"What is the difference between depth-first and breadth-first search?",1
+"Explain the concept of eventual consistency in distributed systems.",1
+"What is the significance of the Turing test?",1
+"Explain the difference between a stack and a queue.",1
+"What is the difference between L1 and L2 regularisation?",1
+"A student claims that the halting problem is undecidable meaning no algorithm can determine whether any program halts. Evaluate this claim.",1
+"What is the difference between supervised and unsupervised learning?",1
+"What is the difference between accuracy and F1 score?",1
+"What is the time complexity of quicksort in the average case?",0
+"How does the CAP theorem constrain distributed database design?",1
+"Explain the concept of tail-call optimisation.",0
+"Explain how skip-gram word embeddings are trained.",1
+"Explain the concept of overfitting and how to detect it.",1
+"How does Monte Carlo sampling approximate intractable distributions?",1
+"How does public key cryptography enable secure communication?",1
+"What is the purpose of an index in a relational database?",1
+"Describe the difference between precision and recall.",0
+"Explain what cross-validation is used for.",1
+"Describe the MapReduce programming model.",1
+"How does a bloom filter work and what is its false positive rate?",1
+"What is the purpose of the softmax function in classification?",1
+"What is the danger of data leakage in machine learning pipelines?",1
+"How does reinforcement learning differ from supervised learning?",1
+"True or false: the average distance from the earth to the moon is three hundred eighty four thousand kilometres.",1
+"What is memoisation and when should you use it?",0
+"Explain the concept of information entropy.",1
+"What is the halting problem and why is it important in computer science?",0
+"What is a kernel trick and why is it used in SVMs?",1
+"How does a lock-free data structure avoid the need for mutexes?",1
+"What is the bias-variance tradeoff in statistical modelling?",1
+"True or false: charles darwin published on the origin of species in eighteen fifty nine.",0
+"Based on the following fact — ""an api or application programming interface defines how software components communicate"" — what can be concluded?",1
+"What is a Merkle tree and where is it used?",1
+"What is the role of the learning rate in gradient descent?",0
+"Verify the following statement: the pythagorean theorem states that the square of the hypotenuse equals the sum of squares of the other sides.",1
+"How does batch normalisation speed up neural network training?",1
+"True or false: precision is the fraction of predicted positives that are truly positive.",1
+"How does consistent hashing reduce rebalancing in distributed caches?",1
+"What is the Liskov substitution principle?",1
+"How does the Floyd-Warshall algorithm compute all-pairs shortest paths?",1
+"Explain the difference between optimistic and pessimistic concurrency control.",1
