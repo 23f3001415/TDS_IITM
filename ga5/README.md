@@ -1,0 +1,76 @@
+# IITM TDS GA5 Solutions
+
+This folder tracks GA5 assignment solutions question-by-question.
+
+## Structure
+
+- `q1/solution.py`: embeddings + K-Means solver for Q1
+- `q1/README.md`: ELI15 steps, run commands, and submission format for Q1
+- `q1/answer.txt`: final cluster answer for Q1
+- `q1/q-embeddings-clustering.txt`: your downloaded input file copied locally
+- `q2/solution.py`: CLIP image search solver for Q2
+- `q2/README.md`: ELI15 steps and submission format for Q2
+- `q2/answer.txt`: final image filename answer for Q2
+- `q2/images/`: extracted Q2 images (`img_01.jpg` to `img_10.jpg`)
+- `q3/solution.py`: batched LLM topic classifier for Q3
+- `q3/README.md`: ELI15 steps and submission format for Q3
+- `q3/answer.txt`: final topic-distribution answer for Q3
+- `q3/q-topic-modeling-llm.csv`: input headlines CSV for Q3
+- `q4/solution.py`: correlation matrix analyzer for Q4
+- `q4/README.md`: ELI15 ToolPak steps and final answer for Q4
+- `q4/answer.txt`: final correlation answer for Q4
+- `q4/q-correlation-excel.csv`: input dataset for Q4
+- `q5/solution.py`: multiple linear regression predictor for Q5
+- `q5/README.md`: ELI15 regression steps and final answer for Q5
+- `q5/answer.txt`: final regression prediction for Q5
+- `q5/q-regression-excel.csv`: input dataset for Q5
+- `q6/README.md`: ELI15 FORECAST.ETS steps and final answer for Q6
+- `q6/q-forecasting-excel.csv`: input dataset for Q6
+- `q6/answer.txt`: final integer forecast for Q6
+- `q7/solution.py`: Z-score outlier counter for Q7 (`|Z| > 2`, sample std dev)
+- `q7/README.md`: ELI15 Z-score steps and final answer for Q7
+- `q7/q-outlier-detection-excel.csv`: input dataset for Q7
+- `q7/answer.txt`: final outlier count for Q7
+- `q8/solution.py`: 21-day EMA analyzer for Q8
+- `q8/README.md`: ELI15 EMA steps and final answer for Q8
+- `q8/q-stock-prices-ema.csv`: input dataset for Q8
+- `q8/answer.txt`: final EMA+ticker result for Q8
+- `q9/solution.py`: Haversine distance + correlation solver for Q9
+- `q9/README.md`: ELI15 geospatial steps and final answer for Q9
+- `q9/q-geospatial-haversine-correlation.csv`: input dataset for Q9
+- `q9/answer.txt`: final rounded correlation for Q9
+- `q10/solution.py`: nearest warehouse assignment solver for Q10
+- `q10/README.md`: ELI15 nearest warehouse steps and final answer for Q10
+- `q10/q-geospatial-nearest-warehouse.csv`: input dataset for Q10
+- `q10/answer.txt`: busiest warehouse result for Q10
+- `q11/solution.py`: SQLite/Datasette revenue aggregation solver for Q11
+- `q11/README.md`: ELI15 Datasette workflow and final answer for Q11
+- `q11/q-datasette-sales-summary.sql`: input SQL build script for Q11
+- `q11/answer.txt`: final top city for delivered revenue in Q11
+- `q12/query.sql`: DuckDB query for highest MoM growth month in 2024 (Q12)
+- `q12/README.md`: ELI15 explanation for date parsing + LAG growth query in Q12
+- `q13/solution.py`: embedding centroid-distance outlier detector for Q13
+- `q13/README.md`: ELI15 steps for semantic outlier detection in Q13
+- `q14/solution.py`: multi-depot nearest warehouse assignment solver for Q14
+- `q14/README.md`: ELI15 steps and final answer for Q14
+- `q14/answer.txt`: busiest warehouse result for Q14
+- `q15/solution.py`: Voronoi largest service area calculator for Q15
+- `q15/README.md`: ELI15 QGIS workflow and final answer for Q15
+- `q15/q-geospatial-qgis-gap.geojson`: input points for Q15
+- `q15/answer.txt`: largest Voronoi area (km²) for Q15
+- `q16/query.sql`: DuckDB pivot query for hourly category totals (Q16)
+- `q16/README.md`: ELI15 steps for complete-hour pivoting in Q16
+- `q17/answer.json`: OpenAI Image Generation request body for Q17
+- `q17/README.md`: ELI15 explanation for JSON body construction in Q17
+- `q18/solution.py`: handbook integer extractor for Q18
+- `q18/README.md`: ELI15 local-RAG workflow for Q18
+- `q18/answer.txt`: final integer answer for Q18
+- `q19/solution.py`: East-region 5-week WMA calculator for Q19
+- `q19/README.md`: ELI15 weighted moving average steps for Q19
+- `q19/answer.txt`: final WMA value for Q19
+- `q20/solution.py`: scraper IP + median response-time analyzer for Q20
+- `q20/README.md`: ELI15 log-anomaly workflow and final answer for Q20
+- `q20/answer.txt`: final `IP, median_ms` output for Q20
+- `q21/solution.py`: peak-hour long-trip top-driver analysis for Q21
+- `q21/README.md`: ELI15 rideshare geospatial workflow for Q21
+- `q21/answer.txt`: final `DRIVER_ID, TOTAL_FARE` for Q21

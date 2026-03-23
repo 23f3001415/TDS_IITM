@@ -1,0 +1,6 @@
+[0] 0.61796383 :: Open-source language model surpasses proprietary benchmarks on reasoning tasks
+[1] 0.36109966 :: Clinical trial shows promising results for Alzheimer's disease treatment
+[2] 0.43689060 :: Mental health app demonstrates effectiveness in reducing anxiety symptoms
+[3] 0.51622990 :: Hospital introduces AI-assisted imaging system to reduce diagnostic errors
+[4] 0.56964305 :: Study links ultra-processed food consumption to increased cardiovascular risk
+[5] 0.48496899 :: Gene therapy trial restores vision in patients with inherited retinal disease
